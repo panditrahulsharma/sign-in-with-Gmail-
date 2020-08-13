@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- client id=618735246240-6a4d0aa2pu5naj1h6jpold5n7lo65nio.apps.googleusercontent.com -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="paste your client-id.com">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <div class="row">
+                <div class="col-lg-8 posts-list">
+                    <div class="card card-signin my-5">
+                        <div class="card-body">
+                            <center><img src="https://demo.codingbirdsonline.com/website/img/coding-birds-online/coding-birds-online-favicon.png" width="70"></center>
+                            <h5 class="card-title text-center">Login with Google using JavaScript OAuth Library</h5>
+                            <center><div id="g-signin2"></div></center>
+                            <center><img src="../static/loader-icon.gif" id="loaderIcon" style="display: none"></center>
+                            <center>
+                                <div class="card" style="width: 22rem;display: none" id="loginDetails">
+                                    <img class="" src="" width="100" id="profileLabel" style="margin-top: 20px;">
+                                    <div class="card-body">
+                                        <div class="card-text" style="text-align: justify">
+                                            <table>
+                                                <tr><td>Name</td><td>:</td><td id="nameLabel"></td></tr>
+                                                <tr><td>Email</td><td>:</td><td id="emailLabel"></td></tr>
+                                                <tr><td>Google ID</td><td>:</td><td id="googleIdLabel"></td></tr>
+                                           </table>
+                                        </div>
+                                        <a href="javaScript:void(0)" onclick="signOut();" class="btn btn-danger">Logout</a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+         </div>
+
+
+         
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/google-auth-script.js"></script>
+</body>
+</html>
